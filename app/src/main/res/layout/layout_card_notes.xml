@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewNotesFragment"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="7dp"
+    app:contentPadding="4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTextView"
+            android:text="this is the sample title"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/dateTextView"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateTextView"
+            android:text="23 Feb"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTextView"
+            android:src="@drawable/ic_star_unchecked"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/starImageView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/starImageView"
+            android:text="this is the sample content"
+            android:layout_below="@+id/titleTextView"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/contentTextView"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
